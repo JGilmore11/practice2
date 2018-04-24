@@ -1,0 +1,127 @@
+header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+} 
+
+.mcolumn {
+  margin-left: 300px;
+  margin-right: 200px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-style: solid;
+}
+
+.lcolumn {   
+    position: absolute;
+    left: 0px;
+    width: 300px;
+    padding: 15px;
+}
+
+.rcolumn {
+    position: absolute;
+    right: 10px;
+    width: 200px;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: gold;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+} 
+ul {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: black;
+    color: white;
+}
+
+li a:hover {
+    background-color: gold;
+} 
+li {
+    font-family: Arial Bold;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    line-height: 26.4px;
+}
+
+<style>
+/* leadership page */
+
+#leadership 
+{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    td, th
+    {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) 
+    {
+        background-color: #dddddd;
+    }
+
+
+/* contact us page */
+</style>
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
