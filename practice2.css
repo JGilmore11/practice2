@@ -1,15 +1,26 @@
 header {
-    background-color: #F1F1F1;
+    background-color: #e6e600;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 } 
 
 ul, li{ 
-  list-style:none; 
-  margin:0; 
-  padding:0;
+  font-family: Arial, Bold;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.mainnav ul{
+
+.mainnav li{
+    margin: 0;
+    display: inline;
+    margin-left: -4px;
+    position: relative;
+}
+
+.mainnav {
+  margin-top: 10px; 
   background-color:black;
 }
 .mainnav a{
@@ -19,10 +30,21 @@ ul, li{
   text-decoration:none;
 }
 .mainnav a:hover{
-  background -color:#333333; 
+  background-color: gold; 
   text-decoration:none; 
   color:white;
 }
+.mainnav li > ul { 
+  display: none; 
+}
+.mainnav li:hover ul {
+  display: block;
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
 .mainnav > ul{ 
   display:table; 
   width:100%;
@@ -37,7 +59,6 @@ ul, li{
 .mainnav > ul > li > a{ 
   text-align:center;
 }
-
 
 @media screen and (max-width: 600px) {
     .column {
@@ -66,7 +87,6 @@ ul, li{
     clear: both;
 }
 
-<style>
 /* leadership page */
 
 #leadership 
@@ -90,10 +110,48 @@ ul, li{
 
 
 /* contact us page */
-</style>
 
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+/* no editing before this point*/
+
+ /* slideshow  */
+@keyframes slideshow {
+  10% {left: 0;}
+  20% {left: 0;}
+  30% {left: -100%;}
+  40% {left: -100%;}
+  50% {left: -200%;}
+  60% {left: -200%;}
+  70% {left: -300%;}
+  80% {left: -300%;}
+  90% {left: -400%;}
+  100% {left: -400%}
+}
+
+
+#slider{
+  overflow:hidden;
+  width:50%;
+  margin:5px auto;
+  border: 5px solid transparent;
+  border-radius: 10px;
+}
+
+#slider figure img{
+  width:20%;
+  float:left;
+}
+
+#slider figure{ 
+  position:relative;
+  width:500%;
+  margin:0;
+  left:0;
+  text-align:left;
+  animation: 20s slideshow infinite
 }
