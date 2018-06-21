@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 header {
     background-color: #e6e600;
     text-align: center;
@@ -69,16 +72,22 @@ ul, li{
 .mcolumn {
   display: inline-block;
   width: 45%;
+  padding: 10px;
+  height: 600px;
 }
 
 .lcolumn {   
     float: left;
     width: 45%;
+    padding: 10px;
+    height: 600px;
 }
 
 .rcolumn {
    float: right;
    width: 10%;
+   padding: 10px;
+   height: 600px;
   }
 
 .row:after {
@@ -111,7 +120,7 @@ ul, li{
 
 /* contact us page */
 
-.container {
+.row {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
